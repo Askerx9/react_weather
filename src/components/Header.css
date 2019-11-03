@@ -1,0 +1,75 @@
+.header{
+  padding-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header form{
+  position: relative;
+}
+
+.header form:hover,
+.header form:focus{
+  opacity: 1;
+}
+
+
+
+.header form input{
+  padding: 5px 10px;
+  background: rgba(255,255,255,.2);
+  border: 1px solid #fff;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #fff;
+}
+
+.header form input::placeholder{
+  font-style: italic;
+}
+
+.header form ul{
+  width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+  box-sizing: border-box;
+  margin: 2px;
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(0);
+  -webkit-backdrop-filter: blur(3px); /* Use for Safari 9+, Edge 17+ (not a mistake) and iOS Safari 9.2+ */
+  backdrop-filter: blur(5px); /* Supported in Chrome 76 */
+  background: rgba(199, 199, 199, 0.2);
+  color: #fff;
+  text-transform: capitalize;
+  padding: 0;
+  border-radius: 0 0 5px 5px;
+}
+.header form ul li{
+  padding:  2px 5px;
+  cursor: pointer;
+}
+.header form ul li p{
+  margin: 0;
+}
+.header form ul li:hover{
+  background: #fff;
+  color: #333;
+}
+
+.header form button{
+  padding: 5px 10px;
+  background: #fff url(../assets/svg/search.svg) no-repeat center;
+  background-size: 60%;
+  border: 1px solid #fff;
+  border-left: 0;
+  border-radius: 0 5px 5px 0;
+  width: 25px;
+  text-indent: -9999px;
+  overflow: hidden;
+  cursor: pointer;
+  outline: none;
+}
